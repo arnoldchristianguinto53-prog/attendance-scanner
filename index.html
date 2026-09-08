@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Attendance Scanner</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- QR Scanner -->
+    <script src="https://unpkg.com/html5-qrcode"></script>
+
+    <!-- EmailJS -->
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📚 Student Attendance</h1>
+
+        <p class="subtitle">
+            Scan your student ID
+        </p>
+
+        <div id="reader"></div>
+
+        <div id="result" class="result">
+            Waiting for scan...
+        </div>
+
+        <div id="studentInfo" class="student-info"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
